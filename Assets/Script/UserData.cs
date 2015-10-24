@@ -11,6 +11,8 @@ public class UserData
 
 	public ChatMsgDataItem chatMsg;
 
+	public Dictionary<int, List<ChatMsgDataItem>> chatMsgMap;
+
 	public UserData(string name)
 	{
 		_name = name;
@@ -23,6 +25,9 @@ public class UserData
 			msg = "myMsg",
 			msg2 = "myMsg2"
 		};
+
+		chatMsgMap = new Dictionary<int, List<ChatMsgDataItem>>();
+		chatMsgMap.Add(1024, new List<ChatMsgDataItem> { chatMsg });
 	}
 
 	public string GetName()

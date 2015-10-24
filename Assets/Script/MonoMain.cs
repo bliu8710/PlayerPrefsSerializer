@@ -37,6 +37,7 @@ public class MonoMain : MonoBehaviour {
 			+ " intList=" + string.Join(",", objNew.intList.ToArray())
 			+ " msg=" + objNew.chatMsg.msg
 			+ " msg2=" + objNew.chatMsg.msg2
+			+ " 1024Msg=" + objNew.chatMsgMap[1024][0].msg
 		);
 	}
 }
