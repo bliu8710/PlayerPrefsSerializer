@@ -20,7 +20,8 @@ public class UserData
 
 		chatMsg = new ChatMsgDataItem
 		{
-			msg = "myMsg"
+			msg = "myMsg",
+			msg2 = "myMsg2"
 		};
 	}
 
